@@ -287,7 +287,8 @@ a {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header-img,
   .image--left,
-  .image--right {
+  .image--right,
+  .footer-img {
     display: none; }
 
   .wrapper-header {
@@ -337,10 +338,7 @@ a {
     margin-top: 5px;
     font-size: 20px; }
 
-  .footer-img {
-    display: none; }
-
-  .container--orange {
+  .footer {
     background: #EFC245 url("../assets/pictures/svg/success.svg") no-repeat 100% 100%;
     background-size: 70%; }
 
@@ -349,5 +347,94 @@ a {
 
   .footer-btn {
     max-width: 60%; } }
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 20px 35px; }
+
+  .caption {
+    padding: 25px 0; }
+
+  .header-logo {
+    width: 220px; }
+
+  .header-img,
+  .image--left,
+  .image--right,
+  .footer-img {
+    display: none; }
+
+  .wrapper-header {
+    background: url("../assets/pictures/svg/town.svg") no-repeat 100% 100%;
+    background-size: 100%; }
+
+  .container:first-child,
+  .container:nth-child(2) {
+    width: 100%;
+    display: block; }
+
+  .container-wrapper:first-child {
+    background: url("../assets/pictures/svg/network.svg") no-repeat 0 110%;
+    background-size: 100%; }
+
+  .screen__container,
+  .image--centre {
+    margin: 20px auto; }
+
+  .screenshot {
+    display: block;
+    width: 100%;
+    margin: 15px 0; }
+
+  .photo__container {
+    max-width: 300px;
+    margin: 20px auto 10px; }
+
+  .photo {
+    margin-bottom: 10px; }
+
+  .image--hide {
+    display: block;
+    width: 80%;
+    margin: 10px auto; }
+
+  .scheme__container {
+    margin: 20px auto; }
+
+  .scheme__box--big {
+    width: 45%; }
+
+  .wrapper--white {
+    min-height: 250px; }
+
+  .wrapper--white {
+    display: block; }
+
+  .scheme-img--left {
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 0 auto 10px; }
+
+  .container {
+    display: block;
+    width: 100%; }
+
+  .container__box {
+    display: block;
+    margin: 20px auto 0; }
+
+  .box {
+    width: 100%; }
+
+  .footer {
+    background: #EFC245 url("../assets/pictures/svg/success.svg") no-repeat 100% 100%;
+    background-size: 90%; }
+
+  .footer__container {
+    width: 100%;
+    min-height: 400px; }
+
+  .footer-btn {
+    max-width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
