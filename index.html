@@ -11,9 +11,11 @@
 
     <!-- font -->
 
+    <!--js -->
+    <script src="js/newNumber.js"></script>
 
 </head>
-<body>
+<body onload="addNum(this)">
 
 <header class="container--orange">
 
@@ -317,7 +319,7 @@
 
             <h2 class="footer-caption">Сколько это стоит?</h2>
             <p class="footer-text">Первые 100 регистраций будут бесплатны. Далее доступ будет платным.</p>
-            <p class="footer-text--red">Осталось бесплатных мест 18/100</p>
+            <p class="footer-text--red">Осталось бесплатных мест <span id="number"></span>/100</p>
 
             <a href="#" class="footer-btn">Зарегистрироваться</a>
 

@@ -293,3 +293,15 @@ a {
   font-size: 22px;
   margin-bottom: 20px;
 }
+
+.footer-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #DF8766;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 0px -1px rgb(178, 98, 73);
+  -moz-box-shadow: 0 5px 0px -1px rgb(178, 98, 73);
+  box-shadow: 0 5px 0px -1px rgb(178, 98, 73);
+}
