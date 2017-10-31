@@ -536,7 +536,7 @@ a {
   width: 60%;
   min-width: 250px;
   display: block;
-  margin: 10px auto 20px;
+  margin: 10px auto -12.5px;
   text-align: center; }
 
 /*footer*/
@@ -1046,6 +1046,12 @@ a {
 
   .box-caption {
     margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px; }
+
+  .box-caption--th {
+    margin-top: 25px;
+    margin-bottom: 30px;
     font-size: 20px; }
 
   .footer {
@@ -1191,6 +1197,9 @@ a {
 
   .box {
     width: 100%; }
+
+  .box-caption {
+    margin-bottom: 10px; }
 
   .footer--bottom {
     display: block;
