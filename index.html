@@ -100,12 +100,16 @@
         <p class="text">Diavita Club достаточно быстро растет и расшияется и через 2 месяца будет во Вьетнаме и через
             еще полтора- в Италии. </p>
 
-        <img src="assets/pictures/img/photo_1.jpeg" class="photo" alt="Photo" />
-        <img src="assets/pictures/img/photo_2.jpeg" class="photo" alt="Photo" />
-        <img src="assets/pictures/img/photo_3.jpeg" class="photo" alt="Photo" />
-        <img src="assets/pictures/img/photo_4.jpeg" class="photo" alt="Photo" />
-        <img src="assets/pictures/img/photo_5.jpeg" class="photo" alt="Photo" />
-        <img src="assets/pictures/img/photo_6.jpeg" class="photo" alt="Photo" />
+        <div class="photo__container">
+
+            <img src="assets/pictures/img/photo_1.jpeg" class="photo" alt="Photo" />
+            <img src="assets/pictures/img/photo_2.jpeg" class="photo" alt="Photo" />
+            <img src="assets/pictures/img/photo_3.jpeg" class="photo" alt="Photo" />
+            <img src="assets/pictures/img/photo_4.jpeg" class="photo" alt="Photo" />
+            <img src="assets/pictures/img/photo_5.jpeg" class="photo" alt="Photo" />
+            <img src="assets/pictures/img/photo_6.jpeg" class="photo" alt="Photo" />
+
+        </div>
 
         <p class="text">Данная структура, через пол года-год, будет развиваться просто за счет бренда. В первую очередь
             мы нацелены на продвижение самого бренда клуба. А продажи уже сформируются после. Мы выстраиваем бренд,
@@ -117,17 +121,17 @@
 
 <div class="container--orange">
 
-    <div class="wrapper">
+    <div class="wrapper wrapper--orange">
 
-        <div class="container--left">
+        <div class="container">
 
             <h2 class="caption--orange">Что мы предлагаем?</h2>
-            <p class="text-orange">Мы предлагаем решение самой большой проблемы MLM бизнеса- обучение партнеров и
+            <p class="text--orange">Мы предлагаем решение самой большой проблемы MLM бизнеса- обучение партнеров и
                 мотивация к росту.</p>
             <p class="text-orange">Общаясь с преставителями MLM-сообщества мы постоянно слышали от них, что люди
                 либо ленивые, либо из голова забита заблуждениями про сетевой маркетинг. И даже если они входят в
                 линию парнера и выполняют PV, то 95% из них просто не растут дальше.</p>
-            <p class="text-orange">Наш проект создан для того, чтобы решить эту проблему. Обучаясь в учебном центре
+            <p class="text--orange">Наш проект создан для того, чтобы решить эту проблему. Обучаясь в учебном центре
                 Diavita Club Ваш партнер будет стремительно расти и привлекать в свою структуру новых партнеров.</p>
 
         </div>
@@ -142,14 +146,22 @@
 
     <div class="wrapper">
 
-        <h1 class="caption">Что вы получите?</h1>
+        <h1 class="caption--top">Что вы получите?</h1>
         <p class="text">Приведем пример. Как думаете, что выгоднее:</p>
 
         <div class="scheme__container">
 
-            <img src="assets/pictures/svg/scheme-one-left.svg" class="scheme-img" alt="Scheme" />
+            <div class="scheme__box">
+                <img src="assets/pictures/svg/scheme-one-left.svg" class="scheme-img" alt="Scheme" />
+                <p class="scheme-text">иметь 20 MP, 40 SP и 30 BL</p>
+            </div>
+
             <p class="scheme-text--centre">или</p>
-            <img src="assets/pictures/svg/scheme-one-right.svg" class="scheme-img" alt="Scheme" />
+
+            <div class="scheme__box">
+                <img src="assets/pictures/svg/scheme-one-right.svg" class="scheme-img" alt="Scheme" />
+                <p class="scheme-text">или просто 300 партнеров</p>
+            </div>
 
         </div>
 
@@ -196,11 +208,15 @@
 
     <div class="wrapper">
 
-        <img src="assets/pictures/svg/scheme-three.svg" class="scheme-img--left" alt="Scheme" />
-        <div class="container--right">
+        <div class="wrapper--white">
 
-            <p class="text">Вам не нужно убеждать людей подниматься по уровням и получать новые статусы</p>
-            <p class="text">За вас это делает Diavita Club- обучает, мотивирует и удерживает в Вашей линии.</p>
+            <img src="assets/pictures/svg/scheme-three.svg" class="scheme-img--left" alt="Scheme" />
+            <div class="container">
+
+                <p class="text">Вам не нужно убеждать людей подниматься по уровням и получать новые статусы</p>
+                <p class="text">За вас это делает Diavita Club- обучает, мотивирует и удерживает в Вашей линии.</p>
+
+            </div>
 
         </div>
 
@@ -209,75 +225,79 @@
         <h1 class="caption">Почему работать с Diavita Club выгодно?</h1>
         <p class="text">Давайте просто сравним работу с другими структурами и сетевыми программами:</p>
 
-        <div class="box">
+        <div class="container__box">
 
-            <img src="assets/pictures/svg/logo.svg" class="box-img" alt="DiaVita Club's logotype" />
+            <div class="box">
 
-            <div class="box__container">
+                <img src="assets/pictures/svg/logo.svg" class="box-img" alt="DiaVita Club's logotype" />
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Наличие форума с обновляемой информацией, на котором собираются самые лучшие
-                    и успешные представители MLM индустрии</p>
+                <div class="box__container">
 
-            </div>
+                    <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Наличие форума с обновляемой информацией, на котором собираются самые лучшие
+                        и успешные представители MLM индустрии</p>
 
-            <div class="box__container">
+                </div>
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Тренинг центр и проведение онлайн-тренингов, которые можно просматривать в любое
-                    удобное время и в любом месте</p>
+                <div class="box__container">
 
-            </div>
+                    <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Тренинг центр и проведение онлайн-тренингов, которые можно просматривать в любое
+                        удобное время и в любом месте</p>
 
-            <div class="box__container">
+                </div>
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Внутренняя школа с постоянным обновлением информации, которая подает информацию в
-                    игровой и максимально понятной форме</p>
+                <div class="box__container">
 
-            </div>
+                    <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Внутренняя школа с постоянным обновлением информации, которая подает информацию в
+                        игровой и максимально понятной форме</p>
 
-            <div class="box__container">
+                </div>
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Онлайн-кабинет, “все в одном месте”. Максимально удобное решение для обучения,
-                    отслеживания своих результатов и слежением за последними изменениями</p>
+                <div class="box__container">
 
-            </div>
+                    <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Онлайн-кабинет, “все в одном месте”. Максимально удобное решение для обучения,
+                        отслеживания своих результатов и слежением за последними изменениями</p>
 
-        </div>
-
-        <div class="box">
-
-            <h3 class="box-caption">Другие структуры и MLM программы:</h3>
-
-            <div class="box__container">
-
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Встречи и тренинги в неудобных местах и в неудобное время</p>
+                </div>
 
             </div>
 
-            <div class="box__container">
+            <div class="box">
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Обучение происходит передачей однотипных брошюр, которые лишь занимают место на
-                    столе</p>
+                <h3 class="box-caption">Другие структуры и MLM программы:</h3>
 
-            </div>
+                <div class="box__container">
 
-            <div class="box__container">
+                    <img src="assets/pictures/svg/dislike.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Встречи и тренинги в неудобных местах и в неудобное время</p>
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Отсутствие общего кабинета, что мешает оперативнор следить за своими успехами</p>
+                </div>
 
-            </div>
+                <div class="box__container">
 
-            <div class="box__container">
+                    <img src="assets/pictures/svg/dislike.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Обучение происходит передачей однотипных брошюр, которые лишь занимают место на
+                        столе</p>
 
-                <img src="assets/pictures/svg/like.svg" class="box-icon" alt="Like" />
-                <p class="box-text">Форумы представляют из себя заброшенные помойки, с бесполезной и устаревшей
-                    информацией</p>
+                </div>
+
+                <div class="box__container">
+
+                    <img src="assets/pictures/svg/dislike.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Отсутствие общего кабинета, что мешает оперативнор следить за своими успехами</p>
+
+                </div>
+
+                <div class="box__container">
+
+                    <img src="assets/pictures/svg/dislike.svg" class="box-icon" alt="Like" />
+                    <p class="box-text">Форумы представляют из себя заброшенные помойки, с бесполезной и устаревшей
+                        информацией</p>
+
+                </div>
 
             </div>
 
@@ -289,7 +309,7 @@
 
 <footer class="container--orange">
 
-    <div class="wrapper">
+    <div class="wrapper footer-wrapper">
 
         <img src="assets/pictures/svg/success.svg" class="footer-img" alt="Success" />
 
