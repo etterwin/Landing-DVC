@@ -11,16 +11,17 @@
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt:400,600,700" rel="stylesheet">
 
     <!--js -->
+    <script src="js/addClass.js"></script>
+    <script src="js/easeScroll.js"></script>
     <script src="js/newNumber.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 
 </head>
-<body onload="addNum(this)">
+<body onload="addNum(this); actionFlag(this)">
 
 <header class="container--orange">
 
@@ -38,6 +39,8 @@
                 <p class="header-text">У нас для Вас есть очень интересное и интригующее предложение. Пожалуйста,
                     обязательно дочитайте его до конца.</p>
 
+                <a href="#down" class="btn-down">Читать далее</a>
+
             </div>
 
             <img src="assets/pictures/svg/town.svg" class="header-img" alt="Town" />
@@ -54,9 +57,12 @@
 
     <div class="wrapper">
 
+        <a id="down"></a>
+
         <div class="container-wrapper">
 
             <img src="assets/pictures/svg/network.svg" class="image--left" alt="Cooperate" />
+
             <div class="container">
 
                 <p class="text">Уверен, что Вы не раз сталкивались с тем, что очень сложно заставить нового члена
@@ -67,6 +73,7 @@
                 <p class="text">Заинтересовало? Ну тогда для начала я расскажу, кто мы!</p>
 
             </div>
+
             <img src="assets/pictures/svg/network.svg" class="image--bottom" alt="Cooperate" />
 
         </div>
@@ -77,7 +84,22 @@
         <p class="text">Diavita- это компания, которая занимается производством товаров повседневного спроса и товаров
             для красоты и здоровья, распространяемые посредством MLM. В данный момент компания работает в таких странах,
             как Тайланд, Вьетнам, Италия и Болгария.</p>
-        <img src="assets/pictures/svg/map.svg" class="image--centre" alt="World's map" />
+
+        <div class="map__container">
+
+            <img src="assets/pictures/svg/map.svg" class="map" alt="World's map" title="World's map"/>
+
+            <img src="assets/pictures/svg/it-flag.svg" id="it_flag" class="flag" alt="World's map" title="The Italian flag"/>
+            <img src="assets/pictures/svg/bu-flag.svg" id="bu_flag" class="flag" alt="World's map" title="The Bulgarian flag"/>
+            <img src="assets/pictures/svg/th-flag.svg" id="th_flag" class="flag" alt="World's map" title="The Thai flag"/>
+            <img src="assets/pictures/svg/vn-flag.svg" id="vn_flag" class="flag" alt="World's map" title="The Vietnamese flag"/>
+
+
+        </div>
+
+        <img src="assets/pictures/svg/map-little.svg" class="image--centre" alt="World's map" title="World's map"/>
+
+        <span id="action_flags"></span>
 
         <!-- What is DiaVita Club -->
 
@@ -328,7 +350,7 @@
 
             <h2 class="footer-caption">Сколько это стоит?</h2>
             <p class="footer-text">Первые 100 регистраций будут бесплатны. Далее доступ будет платным.</p>
-            <p class="footer-text--red">Осталось бесплатных мест <span id="number"></span>/100</p>
+            <p class="footer-text--red">Осталось бесплатных мест <span id="number" class="footer-number"></span>/100</p>
 
             <a href="#" class="footer-btn">Зарегистрироваться</a>
 
@@ -339,6 +361,9 @@
     <img src="assets/pictures/svg/success.svg" class="footer--bottom" alt="Success" />
 
 </footer>
+
+<!--js -->
+<script src="js/easeScroll.js"></script>
 
 </body>
 </html>

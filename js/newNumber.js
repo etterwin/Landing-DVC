@@ -16,6 +16,7 @@ function addNum() {
                 if ($(document).scrollTop() + windowHeight >= height) {
                     setTimeout(
                         function() {
+                            number.className = "num-action";
                             number.innerHTML = '17'; }
                         , 3000);
                 }
