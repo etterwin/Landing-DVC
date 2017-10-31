@@ -6,8 +6,21 @@ function addNum() {
 
     document.getElementById("number").appendChild(number);
 
-    setTimeout(
-        function() {
-            number.innerHTML = '17'; }
-            , 3000);
+    $(document).ready(function() {
+        let windowHeight = $(window).height();
+
+        $(document).on('scroll', function() {
+            $('.footer-btn').each(function() {
+                let self = $(this),
+                    height = self.offset().top + self.height();
+                if ($(document).scrollTop() + windowHeight >= height) {
+                    setTimeout(
+                        function() {
+                            number.innerHTML = '17'; }
+                        , 3000);
+                }
+            });
+        });
+    });
+
 }

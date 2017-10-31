@@ -7,19 +7,24 @@
     <link rel="shortcut icon" href="assets/pictures/img/title.png" type="image/png">
 
     <!-- css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.scss" rel="stylesheet">
 
     <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,600,700" rel="stylesheet">
 
     <!--js -->
     <script src="js/newNumber.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
 </head>
 <body onload="addNum(this)">
 
 <header class="container--orange">
 
-    <div class="wrapper">
+    <div class="wrapper wrapper-header">
 
         <a href="#"><img src="assets/pictures/svg/logo.svg" class="header-logo" alt="DiaVita Club's logotype" /></a>
 
@@ -130,9 +135,10 @@
             <h2 class="caption--orange">Что мы предлагаем?</h2>
             <p class="text--orange">Мы предлагаем решение самой большой проблемы MLM бизнеса- обучение партнеров и
                 мотивация к росту.</p>
-            <p class="text-orange">Общаясь с преставителями MLM-сообщества мы постоянно слышали от них, что люди
+            <p class="text--orange">Общаясь с преставителями MLM-сообщества мы постоянно слышали от них, что люди
                 либо ленивые, либо из голова забита заблуждениями про сетевой маркетинг. И даже если они входят в
                 линию парнера и выполняют PV, то 95% из них просто не растут дальше.</p>
+            <img src="assets/pictures/svg/progress.svg" class="image--hide" alt="Progress" />
             <p class="text--orange">Наш проект создан для того, чтобы решить эту проблему. Обучаясь в учебном центре
                 Diavita Club Ваш партнер будет стремительно расти и привлекать в свою структуру новых партнеров.</p>
 
@@ -169,7 +175,7 @@
 
         <p class="text">Естественно первый вариант. Почему? Все очень просто.</p>
 
-        <div class="scheme__container">
+        <div class="scheme__container scheme__container--last">
 
             <div class="scheme__box">
 
