@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: DaysOne;
+  src: url("../assets/font/DaysOne-Regular.ttf");
+}
+
 html,
 body {
   height: 100vh;
@@ -39,12 +44,48 @@ a {
   margin: 0 auto;
 }
 
+.diavita {
+  font-family: 'DaysOne', sans-serif;
+  color: #107A43;
+}
+
 /*header*/
 
 .header-logo {
   max-width: 300px;
-  display: block;
+  display: inline-block;
   margin-bottom: 50px;
+}
+
+.header-list {
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  margin-top: 13.5px;
+  width: 115px;
+  float: none;
+  margin-left: calc(100% - 420px);
+}
+
+.header-list--th {
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  margin-top: 13.5px;
+  width: 120px;
+  float: right;
+}
+
+.header-item {
+  display: inline-block;
+}
+
+.header-item:first-child {
+  margin-right: 10px;
+}
+
+.header-icon {
+  width: 50px;
 }
 
 .container-wrapper {
@@ -1276,6 +1317,11 @@ a {
     width: 280px;
   }
 
+  .header-list {
+    margin-left: 0;
+    float: right;
+  }
+
   .container-wrapper {
     display: block;
   }
@@ -1363,6 +1409,10 @@ a {
     min-height: 205px;
   }
 
+  .caption--top {
+    padding-bottom: 20px;
+  }
+
   .cloud-1,
   .cloud-4{
     width: 80px;
@@ -1412,6 +1462,12 @@ a {
   .header-logo {
     width: 220px;
     margin-bottom: 20px;
+  }
+
+  .header-list {
+    margin-top: 3px;
+    margin-left: 0;
+    float: right;
   }
 
   .header-text {
@@ -1540,6 +1596,16 @@ a {
 
   .header__container--hide {
     min-height: 135px;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
+  .header-list {
+    float: right;
+    display: block;
+    width: 115px;
   }
 
   .cloud-1,
