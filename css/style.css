@@ -78,6 +78,9 @@ a {
   max-width: 500px;
   width: 49%; }
 
+.image--bottom {
+  display: none; }
+
 .text {
   padding: 10px 0;
   box-sizing: border-box; }
@@ -256,8 +259,6 @@ a {
   margin-bottom: 20px; }
 
 .footer-btn {
-  display: block;
-  max-width: 70%;
   text-align: center;
   padding: 10px 20px;
   box-sizing: border-box;
@@ -291,9 +292,18 @@ a {
   .footer-img {
     display: none; }
 
+  .header-logo {
+    width: 280px; }
+
   .wrapper-header {
     background: url("../assets/pictures/svg/town.svg") no-repeat 100% 100%;
     background-size: 80%; }
+
+  .container-wrapper {
+    display: block; }
+
+  .image--bottom {
+    display: block; }
 
   .container:first-child,
   .container:nth-child(2) {
@@ -343,10 +353,7 @@ a {
     background-size: 70%; }
 
   .footer__container {
-    width: 100%; }
-
-  .footer-btn {
-    max-width: 60%; } }
+    width: 100%; } }
 @media screen and (max-width: 480px) {
   .wrapper {
     padding: 20px 35px; }
@@ -363,6 +370,12 @@ a {
   .footer-img {
     display: none; }
 
+  .container-wrapper {
+    display: block; }
+
+  .image--bottom {
+    display: block; }
+
   .wrapper-header {
     background: url("../assets/pictures/svg/town.svg") no-repeat 100% 100%;
     background-size: 100%; }
@@ -371,10 +384,6 @@ a {
   .container:nth-child(2) {
     width: 100%;
     display: block; }
-
-  .container-wrapper:first-child {
-    background: url("../assets/pictures/svg/network.svg") no-repeat 0 110%;
-    background-size: 100%; }
 
   .screen__container,
   .image--centre {
@@ -402,6 +411,14 @@ a {
 
   .scheme__box--big {
     width: 45%; }
+
+  .scheme__box--small {
+    width: 40%; }
+
+  .scheme-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
 
   .wrapper--white {
     min-height: 250px; }
@@ -432,9 +449,15 @@ a {
 
   .footer__container {
     width: 100%;
-    min-height: 400px; }
+    min-height: 400px; } }
+@media screen and (max-width: 320px) {
+  .wrapper {
+    padding: 20px 15px; }
 
-  .footer-btn {
-    max-width: 70%; } }
+  .scheme__container {
+    min-height: 200px; }
+
+  .box-text {
+    width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
