@@ -84,3 +84,35 @@ function actionSybmols() {
         });
     });
 }
+
+function showNotification() {
+
+    $(document).ready(function() {
+        let windowHeight = $(window).height();
+
+        $(document).on('scroll', function() {
+            $('#show_notification').each(function() {
+                let self = $(this),
+                    height = self.offset().top + self.height();
+                if ($(document).scrollTop() + windowHeight >= height) {
+                    document.getElementById("notification").classList.add("notification--active");
+                    document.getElementById("notification").classList.remove("notification");
+                } else {
+                    document.getElementById("notification").classList.add("notification");
+                    document.getElementById("notification").classList.remove("notification--active");
+                }
+            });
+        });
+
+        $(document).on('scroll', function() {
+            $('#hide_notification').each(function() {
+                let self = $(this),
+                    height = self.offset().top + self.height();
+                if ($(document).scrollTop() + windowHeight >= height) {
+                    document.getElementById("notification").classList.add("notification--hide");
+                    document.getElementById("notification").classList.remove("notification--active");
+                }
+            });
+        });
+    });
+}

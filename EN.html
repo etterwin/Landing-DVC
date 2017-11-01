@@ -21,7 +21,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-<body onload="addNum(this); actionFlag(this); actionSybmols(this); actionIcons(this)">
+<body onload="addNum(this); actionFlag(this); actionSybmols(this); actionIcons(this); showNotification(this)">
 
 <header class="container--orange">
 
@@ -213,6 +213,8 @@
 
         <!-- Why is DiaVita Club -->
 
+        <span id="show_notification"></span>
+
         <h2 class="caption">Why choose <span class="diavita">DiaVita Club</span>?</h2>
         <p class="text">Only our network has a full-fledged forum with a huge amount of unique content, a full-fledged
             school and a training center.</p>
@@ -230,11 +232,17 @@
             <img src="assets/pictures/img/photo_5.jpeg" class="photo" alt="Photo" />
             <img src="assets/pictures/img/photo_6.jpeg" class="photo" alt="Photo" />
 
+            <a href="#to_registration" class="to-registration">
+                <img src="assets/pictures/svg/notification-en.svg" id="notification" class="notification" />
+            </a>
+
         </div>
 
         <p class="text">This structure will be developing simply using the brand in 1 or 1.5 years. First of all, we
             are aimed at promoting the club brand. And sales will be formed after. We are building the brand which will
             work for you and I.</p>
+
+        <span id="hide_notification"></span>
 
     </div>
 
@@ -491,6 +499,7 @@
             <p class="footer-text--red">There are <span id="number" class="footer-number"></span>/100 free places left.</p>
 
             <a href="#" class="footer-btn">Sign up</a>
+            <a id="to_registration"></a>
 
         </div>
 

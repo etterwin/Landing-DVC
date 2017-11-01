@@ -820,6 +820,10 @@ a {
     top: -6px; }
   100% {
     text-shadow: none; } }
+@media screen and (min-width: 993px) {
+  .notification--active {
+    width: 450px;
+    transform-origin: 285px 100%; } }
 @media screen and (min-width: 992px) and (max-width: 1024px) {
   .header__container {
     margin-top: 50px; }
@@ -839,6 +843,10 @@ a {
 @media screen and (max-width: 992px) {
   .container--wide {
     width: 100%; }
+
+  .notification--active {
+    width: 400px;
+    transform-origin: 250px 100%; }
 
   .header__container {
     display: none; }
@@ -1003,10 +1011,59 @@ a {
       left: 0; } }
   .progress__container {
     margin-top: 50px; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .notification--active {
+    width: 350px;
+    transform-origin: 219px 100%; } }
 @media screen and (min-width: 769px) {
   .btn-down {
-    display: none; } }
+    display: none; }
+
+  .notification {
+    display: none; }
+
+  .notification--active {
+    position: fixed;
+    transform: rotate(180deg);
+    animation: showNotification 0.7s ease-in forwards; }
+
+  @keyframes showNotification {
+    0% {
+      right: 5%;
+      bottom: 0;
+      transform: rotate(180deg); }
+    75% {
+      transform: rotate(380deg); }
+    90% {
+      transform: rotate(355deg); }
+    100% {
+      right: 5%;
+      bottom: 0;
+      transform: rotate(360deg); } }
+  .notification--hide {
+    position: fixed;
+    max-width: 450px;
+    width: 100%;
+    transform-origin: 285px 100%;
+    animation: hideNotification 0.5s ease-in forwards; }
+
+  @keyframes hideNotification {
+    0% {
+      right: 5%;
+      bottom: 0; }
+    45% {
+      bottom: 40px; }
+    90% {
+      bottom: -400px;
+      right: 5%; }
+    100% {
+      display: none; } } }
 @media screen and (max-width: 768px) {
+  .notification,
+  .notification--hide,
+  .notification--active {
+    display: none; }
+
   .btn-down {
     text-align: center;
     padding: 10px 20px;
