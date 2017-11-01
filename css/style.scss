@@ -349,7 +349,8 @@ a {
   z-index: 2;
 }
 
-.network__container--hide {
+.network__container--hide,
+.network-img--small {
   display: none;
 }
 
@@ -787,6 +788,10 @@ a {
   z-index: 2;
   max-height: 250px;
   bottom: 0;
+}
+
+.progress-img--small {
+  display: none;
 }
 
 .progress-icon {
@@ -1589,6 +1594,10 @@ a {
     width: 100%;
   }
 
+  .town {
+    bottom: 0;
+  }
+
   .map__container {
     display: none;
   }
@@ -1914,6 +1923,83 @@ a {
 
 }
 
+@media screen and (min-width: 412px) and (max-width: 414px) {
+
+  .town {
+    bottom: 0;
+  }
+
+  .network-circle-1--small {
+    left:0;
+  }
+
+  .network-sym {
+    top: 35%;
+  }
+
+  .network-earth {
+    left: 5%;
+  }
+
+  .network-chat {
+    left: 25%;
+  }
+
+  .network-light {
+    top: 45%;
+  }
+
+  .network-circle-2--big {
+    top:34%;
+    left: 49%;
+  }
+
+  .network-coop {
+    left: 73%;
+    top: 18%;
+  }
+
+  .network-email {
+    left: 70%;
+    top: 40%;
+  }
+
+  .progress__container--hide {
+    display: none;
+  }
+
+  .progress-img--small {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 375px){
+
+  .town {
+    bottom: 0;
+  }
+
+  .cloud-4,
+  .cloud-1 {
+    width: 60px;
+  }
+
+  .network__container--hide,
+  .progress__container--hide {
+    display: none;
+  }
+
+  .network-img--small,
+  .progress-img--small {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
 
   .header__container--hide {
@@ -1978,6 +2064,18 @@ a {
 
   .box-text {
     width: 80%;
+  }
+
+  .network__container--hide,
+  .progress__container--hide {
+    display: none;
+  }
+
+  .network-img--small,
+  .progress-img--small {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
   }
 
 }

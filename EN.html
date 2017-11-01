@@ -21,7 +21,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-<body onload="addNum(this); actionFlag(this)">
+<body onload="addNum(this); actionFlag(this); actionSybmols(this); actionIcons(this)">
 
 <header class="container--orange">
 
@@ -139,23 +139,27 @@
 
             <div class="network__container--hide">
 
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle-1--small" />
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle" />
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle-2--small" />
-                <img src="assets/pictures/svg/earth.svg" class="network-icon network-earth" />
-                <img src="assets/pictures/svg/@.svg" class="network-icon network-sym" />
-                <img src="assets/pictures/svg/chat.svg" class="network-icon network-chat" />
-                <img src="assets/pictures/svg/light.svg" class="network-icon network-light" />
-                <img src="assets/pictures/svg/loud.svg" class="network-icon network-loud" />
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle-1--big" />
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle-2--big" />
-                <img src="assets/pictures/svg/coop.svg" class="network-icon network-coop" />
-                <img src="assets/pictures/svg/email.svg" class="network-icon network-email" />
-                <img src="assets/pictures/svg/gray-circle.svg" class="network-icon network-circle-3-small" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_1" class="network-icon" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_2" class="network-icon" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_3" class="network-icon" />
+                <img src="assets/pictures/svg/earth.svg" id="earth" class="network-icon" />
+                <img src="assets/pictures/svg/@.svg" id="sym" class="network-icon" />
+                <img src="assets/pictures/svg/chat.svg" id="chat" class="network-icon" />
+                <img src="assets/pictures/svg/light.svg" id="light" class="network-icon" />
+                <img src="assets/pictures/svg/loud.svg" id="loud" class="network-icon" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_4" class="network-icon" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_5" class="network-icon" />
+                <img src="assets/pictures/svg/coop.svg" id="coop" class="network-icon" />
+                <img src="assets/pictures/svg/email.svg" id="email" class="network-icon" />
+                <img src="assets/pictures/svg/gray-circle.svg" id="circle_6" class="network-icon" />
 
                 <img src="assets/pictures/svg/networking.svg" class="network-img" alt="Cooperate" />
 
             </div>
+
+            <span id="action_icons"></span>
+
+            <img src="assets/pictures/svg/network-small.svg" class="network-img--small" />
 
         </div>
 
@@ -251,20 +255,22 @@
 
             <div class="progress__container--hide">
 
-                <img src="assets/pictures/svg/left-percent.svg" class="progress-icon progress-percent--left" />
-                <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb--left" />
-                <img src="assets/pictures/svg/left-dll.svg" class="progress-icon progress-doll--left" />
-                <img src="assets/pictures/svg/percent.svg" class="progress-icon progress-percent" />
-                <img src="assets/pictures/svg/right-eur.svg" class="progress-icon progress-euro--left" />
-                <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb" />
-                <img src="assets/pictures/svg/right-eur.svg" class="progress-icon progress-eur--right" />
-                <img src="assets/pictures/svg/percent.svg" class="progress-icon progress-percent--right" />
-                <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb--right" />
-                <img src="assets/pictures/svg/right-doll.svg" class="progress-icon progress-doll--right" />
+                <img src="assets/pictures/svg/left-percent.svg" id="percent_4" class="progress-icon" />
+                <img src="assets/pictures/svg/bulb.svg" id="bulb_4" class="progress-icon" />
+                <img src="assets/pictures/svg/left-dll.svg" id="doll_4" class="progress-icon" />
+                <img src="assets/pictures/svg/percent.svg" id="percent_5" class="progress-icon" />
+                <img src="assets/pictures/svg/right-eur.svg" id="euro_4" class="progress-icon" />
+                <img src="assets/pictures/svg/bulb.svg" id="bulb_5" class="progress-icon" />
+                <img src="assets/pictures/svg/right-eur.svg" id="euro_5" class="progress-icon" />
+                <img src="assets/pictures/svg/percent.svg" id="percent_6" class="progress-icon" />
+                <img src="assets/pictures/svg/bulb.svg" id="bulb_6" class="progress-icon" />
+                <img src="assets/pictures/svg/right-doll.svg" id="doll_5" class="progress-icon" />
 
                 <img src="assets/pictures/svg/progress.svg" class="progress-img" alt="Progress" />
 
             </div>
+
+            <img src="assets/pictures/svg/progress-small.svg" class="progress-img--small" />
 
             <p class="text--orange">Our project was created in order to solve this problem. Learning at the
                 <span class="diavita">DiaVita Club</span> training center your partner will grow rapidly and attract
@@ -274,20 +280,22 @@
 
         <div class="progress__container">
 
-            <img src="assets/pictures/svg/left-percent.svg" class="progress-icon progress-percent--left" />
-            <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb--left" />
-            <img src="assets/pictures/svg/left-dll.svg" class="progress-icon progress-doll--left" />
-            <img src="assets/pictures/svg/percent.svg" class="progress-icon progress-percent" />
-            <img src="assets/pictures/svg/right-eur.svg" class="progress-icon progress-euro--left" />
-            <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb" />
-            <img src="assets/pictures/svg/right-eur.svg" class="progress-icon progress-eur--right" />
-            <img src="assets/pictures/svg/percent.svg" class="progress-icon progress-percent--right" />
-            <img src="assets/pictures/svg/bulb.svg" class="progress-icon progress-bulb--right" />
-            <img src="assets/pictures/svg/right-doll.svg" class="progress-icon progress-doll--right" />
+            <img src="assets/pictures/svg/left-percent.svg" id="percent_1" class="progress-icon" />
+            <img src="assets/pictures/svg/bulb.svg" id="bulb_1" class="progress-icon" />
+            <img src="assets/pictures/svg/left-dll.svg" id="doll_1" class="progress-icon" />
+            <img src="assets/pictures/svg/percent.svg" id="percent_2" class="progress-icon" />
+            <img src="assets/pictures/svg/right-eur.svg" id="euro_1" class="progress-icon" />
+            <img src="assets/pictures/svg/bulb.svg" id="bulb_2" class="progress-icon" />
+            <img src="assets/pictures/svg/right-eur.svg" id="euro_2" class="progress-icon" />
+            <img src="assets/pictures/svg/percent.svg" id="percent_3" class="progress-icon" />
+            <img src="assets/pictures/svg/bulb.svg" id="bulb_3" class="progress-icon" />
+            <img src="assets/pictures/svg/right-doll.svg" id="doll_2" class="progress-icon" />
 
             <img src="assets/pictures/svg/progress.svg" class="progress-img" alt="Progress" />
 
         </div>
+
+        <span id="action_symbols"></span>
 
     </div>
 
