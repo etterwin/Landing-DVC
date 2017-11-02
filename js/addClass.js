@@ -97,9 +97,9 @@ function showNotification() {
                 if ($(document).scrollTop() + windowHeight >= height) {
                     document.getElementById("notification").classList.add("notification--active");
                     document.getElementById("notification").classList.remove("notification");
-                } else {
-                    document.getElementById("notification").classList.add("notification");
-                    document.getElementById("notification").classList.remove("notification--active");
+
+                    document.getElementById("close_notification").classList.add("close-notification--active");
+                    document.getElementById("close_notification").classList.remove("close-notification");
                 }
             });
         });
@@ -111,8 +111,19 @@ function showNotification() {
                 if ($(document).scrollTop() + windowHeight >= height) {
                     document.getElementById("notification").classList.add("notification--hide");
                     document.getElementById("notification").classList.remove("notification--active");
+
+                    document.getElementById("close_notification").classList.add("close-notification--hide");
                 }
             });
         });
     });
+}
+
+function closeNotification() {
+
+    $('#close_notification').click(function () {
+        document.getElementById("notification").classList.add("notification--none");
+        document.getElementById("notification").classList.remove("notification--active", "notification--hide");
+        document.getElementById("close_notification").classList.add("close-notification--hide");
+    })
 }

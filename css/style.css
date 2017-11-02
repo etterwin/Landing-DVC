@@ -558,6 +558,11 @@ a {
   -moz-box-shadow: 0 5px 0px -1px #e5ddd0;
   box-shadow: 0 5px 0px -1px #e5ddd0; }
 
+div.close-notification,
+.close-notification--hide,
+.notification--none {
+  display: none !important; }
+
 .photo__container {
   margin: 50px auto;
   max-width: 1000px;
@@ -820,6 +825,33 @@ a {
     top: -6px; }
   100% {
     text-shadow: none; } }
+@media screen and (min-width: 1025px) {
+  div.close-notification--active {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 10;
+    bottom: 300px;
+    right: 3%;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    cursor: pointer; }
+
+  div.close-notification--active::before {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    content: '';
+    cursor: pointer; } }
 @media screen and (min-width: 993px) {
   .notification--active {
     width: 450px;
@@ -831,6 +863,33 @@ a {
   .network__container {
     max-height: 300px;
     margin-top: 50px; }
+
+  div.close-notification--active {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 10;
+    bottom: 280px;
+    right: 2%;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    cursor: pointer; }
+
+  div.close-notification--active::before {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    content: '';
+    cursor: pointer; }
 
   .town {
     bottom: 28%; }
@@ -972,10 +1031,10 @@ a {
     animation: moveCarLeft 6s linear infinite; }
 
   .car-green {
-    left: 0;
+    left: -140px;
     top: 85%;
     z-index: 6;
-    animation: moveCarRight 10s linear infinite; }
+    animation: moveCarRightGreen 10s linear infinite; }
 
   .car-blue {
     right: 60px;
@@ -1005,7 +1064,19 @@ a {
       transform: scale(-1, 1); }
     50% {
       transform: scale(1, 1);
-      left: calc(100% - 90px); }
+      left: calc(100% - 100px); }
+    100% {
+      transform: scale(1, 1);
+      left: 0; } }
+  @keyframes moveCarRightGreen {
+    0% {
+      transform: scale(-1, 1);
+      left: -140px; }
+    49.5% {
+      transform: scale(-1, 1); }
+    50% {
+      transform: scale(1, 1);
+      left: calc(100% - 110px); }
     100% {
       transform: scale(1, 1);
       left: 0; } }
@@ -1014,16 +1085,45 @@ a {
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .notification--active {
     width: 350px;
-    transform-origin: 219px 100%; } }
+    transform-origin: 219px 100%; }
+
+  div.close-notification--active {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 10;
+    bottom: 260px;
+    right: 3%;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    cursor: pointer; }
+
+  div.close-notification--active::before {
+    display: inline-block;
+    position: fixed;
+    background: lightgray;
+    height: 3px;
+    width: 30px;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    content: '';
+    cursor: pointer; } }
 @media screen and (min-width: 769px) {
   .btn-down {
     display: none; }
 
   .notification {
-    display: none; }
+    display: none;
+    z-index: 4; }
 
   .notification--active {
     position: fixed;
+    z-index: 4;
     transform: rotate(180deg);
     animation: showNotification 0.7s ease-in forwards; }
 
@@ -1044,6 +1144,7 @@ a {
     position: fixed;
     max-width: 450px;
     width: 100%;
+    z-index: 4;
     transform-origin: 285px 100%;
     animation: hideNotification 0.5s ease-in forwards; }
 
@@ -1211,7 +1312,7 @@ a {
     animation: moveCarLeft 6s linear infinite; }
 
   .car-green {
-    left: 0;
+    left: -40px;
     top: 93%;
     z-index: 6;
     animation: moveCarRight 10s linear infinite; }
